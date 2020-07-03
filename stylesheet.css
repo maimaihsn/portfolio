@@ -4,7 +4,13 @@
 
 a {
   color: #000;
-  opacity: 0.78;
+  opacity: 0.8;
+  transition: all 0.4s;
+}
+
+a:hover{
+  opacity: 0.8;
+  color: rgb(222, 237, 255);
 }
 
 .loader-wrap {
@@ -90,7 +96,7 @@ a {
 
 body {
   margin: 0;
-  font-family: "Hiragino Kaku Gothic ProN";
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 a {
@@ -110,15 +116,14 @@ a {
 
 .top-wrapper {
   height:900px;
-  padding: 50px 50px 50px 0;
+  padding: 40px 40px 40px 0;
   background-image: url(./top_sola.png);
   background-color: #fff;
   background-size: 77%;
   background-repeat: no-repeat;
-  color: white;
   text-align: right;
   animation-name: fadein;
-  animation-duration: 2.7s;
+  animation-duration: 2.6s;
   position: relative;
 }
 
@@ -132,9 +137,9 @@ a {
 }
 
 .top-wrapper h2 {
-  opacity: 0.78;
+  opacity: 0.8;
   color:#000;
-  font-weight: normal;
+  font-weight: 600;
   font-family: 'Ubuntu', sans-serif;
   font-size:40px;
   letter-spacing: 3px;
@@ -161,10 +166,11 @@ to {
 }
 }
 
+
 .star1{
   position:absolute;
-  left:15%;
-  top:78%;
+  left:12%;
+  top:60%;
     color:#f2c820;
   opacity: 0.65;
   font-size: 8.5em;
@@ -179,7 +185,7 @@ to {
 }
 .star3{
   position:absolute;
-  left:74%;
+  left:65%;
   top:35%;
   color:#f2c820;
   font-size: 6em;
@@ -192,6 +198,15 @@ to {
   top:25%;
   color:#f2c820;
   font-size: 4.5em;
+  opacity: 0.65;
+}
+
+.star5{
+  position:absolute;
+  left:70%;
+  top:60%;
+  color:#f2c820;
+  font-size: 16.5em;
   opacity: 0.65;
 }
 
@@ -212,7 +227,7 @@ to {
     100%{ transform:rotate(360deg); }
 }
 .mawaru-hoshi {
-    animation:5s linear infinite twinklestar;
+    animation:10s linear infinite twinklestar;
 }
 
 .btn-wrapper {
@@ -290,14 +305,26 @@ header {
 }
 
 .lesson-wrapper {
-  height: 900px;
+  height: 600px;
   padding-bottom: 80px;
   padding-left: 5%;
   padding-right: 5%;
   background-color: #f7f7f7;
   text-align: center;
-  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 350;
+  animation-name: fadein_contents;
+  animation-duration: 2s;
+}
+
+@keyframes fadein_contents {
+from {
+    opacity: 0;
+    transform: translateY(10px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
 }
 
 .heading {
@@ -323,11 +350,29 @@ header {
 }
 
 .lesson-icon p {
-  position: absolute;
-  top: 37%;
-  width: 100%;
-  color: white;
+  color: #000;
 }
+
+.circle{
+  border-radius: 50%;
+  background-color: rgb(222, 237, 255);
+  height: 220px;
+  width: 220px;
+  display: inline-block;
+line-height: 220px;
+}
+
+
+.lesson-icon i{
+  font-size: 6.5em;
+  opacity: 0.85;
+  position: absolute;
+  top: 27%;
+  left: 0%;
+  width:100%;
+}
+
+
 
 .text-contents {
   width: 80%;
@@ -341,9 +386,20 @@ header {
   font-weight: normal;
 }
 
-.works-wrapper {
-  height: 780px;
+.skills-wrapper {
+  height: 1000px;
   padding-bottom: 80px;
+  font-weight: 350;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #fff;
+  text-align: center;
+}
+
+.works-wrapper {
+  height: 700px;
+  padding-bottom: 80px;
+  font-weight: 350;
   padding-left: 5%;
   padding-right: 5%;
   background-color: #fff;
@@ -369,9 +425,34 @@ header {
   box-shadow: none;
 }
 
+
+.contact-form {
+  padding-top: 100px;
+}
+
+/* inputとtextareaのCSSを指定してください */
+input, textarea{
+  width:400px;
+  margin-top:10px;
+  margin-bottom:30px;
+  padding:20px;
+  font-size:18px;
+  border:1px solid #dee7ec;
+}
+
+/* contact-submitのCSSを指定してください */
+.contact-submit{
+  background-color:#fff;
+  color:#000;
+  border: 2px solid #000;
+  opacity: 0.85;
+  width: 230px;
+}
+
+
 footer h1 {
   padding-top: 20px;
-  opacity: 0.6;
+  opacity: 0.7;
   font-size: 28px;
   letter-spacing: 2.5px;
   color:#000;
@@ -401,6 +482,20 @@ footer {
 
 .clear {
   clear: left;
+}
+
+.go-to-top{
+  position:fixed;
+  top: 87%;
+  left:92%;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  border-radius: 50%;
+  border: 2px solid;
+  padding:17px;
+  text-align: center;
+  opacity: 0.8;
 }
 
 @media all and (max-width: 1000px) {

@@ -22,4 +22,26 @@ $(function(){
    }, 500);
   });
 
+  var topBtn = $('.go-to-top');
+      //ボタンを非表示にする
+      topBtn.hide();
+      //スクロールしてページトップから100に達したらボタンを表示
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+  　　　　　　　//フェードインで表示
+              topBtn.fadeIn();
+          } else {
+  　　　　　　　//フェードアウトで非表示
+              topBtn.fadeOut();
+          }
+      });
+
+//トップに戻る
+  $('.go-to-top').click(function(){
+    $('html,body').animate({
+     'scrollTop': 0
+   }, 500);
+  });
+
+
 });
