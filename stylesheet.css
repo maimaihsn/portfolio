@@ -328,8 +328,8 @@ to {
 }
 
 .heading {
-  padding-top: 80px;
-  padding-bottom: 50px;
+  padding-top: 95px;
+  padding-bottom: 60px;
   color: #5f5d60;
 }
 
@@ -338,6 +338,7 @@ to {
   font-family: 'Ubuntu', sans-serif;
   font-size:55px;
   letter-spacing: 3px;
+  padding-bottom: 15px;
 }
 
 .lesson {
@@ -397,12 +398,12 @@ line-height: 220px;
 }
 
 .works-wrapper {
-  height: 700px;
+  height: 20%;
   padding-bottom: 80px;
   font-weight: 350;
   padding-left: 5%;
   padding-right: 5%;
-  background-color: #fff;
+  background-color: rgb(222, 237, 255);;
   text-align: center;
 }
 
@@ -427,7 +428,7 @@ line-height: 220px;
 
 
 .contact-form {
-  padding-top: 100px;
+  padding-top: 60px;
 }
 
 /* inputとtextareaのCSSを指定してください */
@@ -437,10 +438,11 @@ input, textarea{
   margin-bottom:30px;
   padding:20px;
   font-size:18px;
-  border:1px solid #dee7ec;
+  border:1px solid #000;
+  opacity: 0.8;
 }
 
-/* contact-submitのCSSを指定してください */
+
 .contact-submit{
   background-color:#fff;
   color:#000;
@@ -448,6 +450,14 @@ input, textarea{
   opacity: 0.85;
   width: 230px;
 }
+
+.works-wrapper img{
+  margin-top:20px;
+  height: 300px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.26)
+  border-radius: 20px;
+}
+
 
 
 footer h1 {
@@ -466,9 +476,9 @@ footer p {
 
 footer {
   text-align: center;
-  height: 300px;
+  height: 10%;
   padding-top: 60px;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
   background-color: rgb(222, 237, 255);
 }
 
@@ -493,7 +503,7 @@ footer {
   line-height: 55px;
   border-radius: 50%;
   border: 2px solid;
-  padding:17px;
+
   text-align: center;
   opacity: 0.8;
 }
@@ -521,6 +531,22 @@ footer {
     background-size: 90%;
 
   }
+
+  .lesson-wrapper {
+    height: 15%;
+  }
+
+  .skills-wrapper {
+    height: 20%;
+  }
+
+  .works-wrapper{
+    height: 16%;
+  }
+
+  .message-wrapper{
+     height: 13%;
+  }
 }
 
 @media all and (max-width: 800px) {
@@ -537,7 +563,7 @@ footer {
   }
 
   .heading h2 {
-    font-size: 20px;
+    font-size: 35px;
   }
 
   .star1{
@@ -556,7 +582,20 @@ footer {
     top:25%;
     font-size: 3.5em;
   }
+
+  .star5{
+    display: none;
+  }
+
+
+
+  .lesson-wrapper {
+    height: 15%;
+  }
+
 }
+
+
 
 
 @media all and (max-width: 670px) {
@@ -570,7 +609,7 @@ footer {
 
   .top-wrapper {
     height:570px;
-    padding: 80px 50px 50px 0;
+    padding: 85px 50px 50px 0;
     background-size: 90%;
 
   }
@@ -597,6 +636,10 @@ footer {
     font-size: 3.5em;
   }
 
+  .star5{
+    display: none;
+  }
+
   .twitter {
     margin-top: 10px;
   }
@@ -605,11 +648,15 @@ footer {
     padding-right:10px;
   }
   .top-wrapper h1 {
-    font-size: 24px;
+    font-size: 26px;
   }
 
   .top-wrapper p {
     font-size: 14px;
+  }
+
+  .top-wrapper h2{
+    font-size: 24px;
   }
 
   .lesson {
@@ -617,10 +664,19 @@ footer {
   }
 
   .lesson-wrapper {
-    height: 1700px;
+    height: 15%;
   }
 
   .message-wrapper .btn {
     width: 100%;
   }
+
+
+  .go-to-top{
+    top: 90%;
+    left:85%;
+  }
+
+
+
 }
