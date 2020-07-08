@@ -4,12 +4,12 @@
 
 a {
   color: #000;
-  opacity: 0.8;
+  opacity: 0.9;
   transition: all 0.4s;
 }
 
 a:hover{
-  opacity: 0.8;
+  opacity: 0.9;
   color: rgb(222, 237, 255);
 }
 
@@ -128,16 +128,16 @@ a {
 }
 
 .top-wrapper h1 {
-  opacity: 0.78;
-  font-size: 83px;
-  padding-top: 40px;
+  opacity: 0.85;
+  font-size: 65px;
+  padding-top: 30px;
   letter-spacing: 10px;
   color:#000;
   font-family: 'Krona One', sans-serif;
 }
 
 .top-wrapper h2 {
-  opacity: 0.8;
+  opacity: 0.9;
   color:#000;
   font-weight: 600;
   font-family: 'Ubuntu', sans-serif;
@@ -146,7 +146,7 @@ a {
 }
 
 .top-wrapper p {
-  opacity: 0.7;
+  opacity: 0.8;
   font-size: 28px;
   color:#000;
   font-family: 'Josefin Sans', sans-serif;
@@ -171,43 +171,43 @@ to {
   position:absolute;
   left:12%;
   top:60%;
-    color:#f2c820;
-  opacity: 0.65;
+  color:rgb(000, 227, 255);
+  opacity: 0.8;
   font-size: 8.5em;
 }
 .star2{
   position:absolute;
   left:78%;
   top:18%;
-  color:#f2c820;
-  opacity: 0.65;
+  color:rgb(000, 227, 255);
+  opacity: 0.8;
   font-size: 11em;
 }
 .star3{
   position:absolute;
   left:65%;
   top:35%;
-  color:#f2c820;
+  color:rgb(000, 227, 255);
   font-size: 6em;
-  opacity: 0.65;
+  opacity: 0.8;
 }
 
 .star4{
   position:absolute;
   left:5%;
   top:25%;
-  color:#f2c820;
+  color:rgb(000, 227, 255);
   font-size: 4.5em;
-  opacity: 0.65;
+  opacity: 0.8;
 }
 
 .star5{
   position:absolute;
   left:70%;
   top:60%;
-  color:#f2c820;
+  color:rgb(000, 227, 255);
   font-size: 16.5em;
-  opacity: 0.65;
+  opacity: 0.8;
 }
 
 .star-fav:before {
@@ -304,8 +304,36 @@ header {
   background-color: rgba(255,255,255,0.3);
 }
 
+.comment-wrapper {
+  height: 2000px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #fff;
+  text-align: center;
+  font-weight: 350;
+  animation-name: fadein_contents;
+  animation-duration: 2s;
+}
+
+.comment-wrapper h2{
+  padding: 50px;
+  border-bottom: 3px solid #000;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 28px;
+
+}
+
+.comment-wrapper p{
+  font-size: 18px;
+  line-height:4em;
+
+}
+
+
 .lesson-wrapper {
-  height: 600px;
+  height: 800px;
   padding-bottom: 80px;
   padding-left: 5%;
   padding-right: 5%;
@@ -330,7 +358,7 @@ to {
 .heading {
   padding-top: 95px;
   padding-bottom: 60px;
-  color: #5f5d60;
+  color: #000;
 }
 
 .heading h2 {
@@ -403,7 +431,7 @@ line-height: 220px;
   font-weight: 350;
   padding-left: 5%;
   padding-right: 5%;
-  background-color: rgb(222, 237, 255);;
+  background-color: rgb(222, 237, 255);
   text-align: center;
 }
 
@@ -462,7 +490,7 @@ input, textarea{
 
 footer h1 {
   padding-top: 20px;
-  opacity: 0.7;
+  opacity: 0.9;
   font-size: 28px;
   letter-spacing: 2.5px;
   color:#000;
@@ -477,8 +505,8 @@ footer p {
 footer {
   text-align: center;
   height: 10%;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 70px;
+  padding-bottom: 70px;
   background-color: rgb(222, 237, 255);
 }
 
@@ -503,10 +531,22 @@ footer {
   line-height: 55px;
   border-radius: 50%;
   border: 2px solid;
-
   text-align: center;
-  opacity: 0.8;
+  opacity: 0.9;
 }
+
+.scroll{
+  position: fixed;
+  top: 80%;
+  left: 4%;
+  text-align: center;
+}
+.scroll p{
+  writing-mode: vertical-rl;
+  color: #000;
+}
+
+
 
 @media all and (max-width: 1000px) {
   .lesson {
