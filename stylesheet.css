@@ -96,7 +96,7 @@ a:hover{
 
 body {
   margin: 0;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Sawarabi Gothic', sans-serif;
 }
 
 a {
@@ -111,15 +111,17 @@ a {
 .container {
   width: 100%;
   padding: 0 15px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .top-wrapper {
-  height:900px;
-  padding: 40px 40px 40px 0;
+  height:100vh;
+  padding: 8%;
   background-image: url(./top_sola.png);
   background-color: #fff;
-  background-size: 77%;
+  background-size: cover;
+  width:auto;
   background-repeat: no-repeat;
   text-align: right;
   animation-name: fadein;
@@ -305,11 +307,72 @@ header {
 }
 
 .comment-wrapper {
-  height: 2000px;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  padding-left: 5%;
-  padding-right: 5%;
+  height: 600px;
+  padding: 5%;
+  background-color: #fff;
+  text-align: center;
+  animation-name: fadein_contents;
+  animation-duration: 2s;
+}
+
+.comment-wrapper h2{
+  padding: 20px;
+  border-bottom: 1px solid #000;
+display: inline-block;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 28px;
+}
+
+.comment-wrapper p{
+  font-size: 17px;
+  line-height: 24px;
+  font-family: 'Sawarabi Gothic', sans-serif;
+}
+
+.profile{
+  padding-top: 25px;
+  width:60%;
+  height:100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-img{
+  width: 48%;
+  height: 100%;
+  float:left;
+  margin: auto;
+}
+.profile-info{
+  text-align: left;
+  width: 52%;
+  height: 100%;
+  float: left;
+}
+.profile-info h3{
+  margin-top: 0;
+  margin-bottom: 5px;
+  display: inline-block;
+  font-family: 'Nunito', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.icon{
+  width: 24px;
+  height: 24px;
+  margin-right:6px;
+  vertical-align: top;
+}
+
+.maimai{
+  width: 190px;
+  height: 190px;
+}
+
+.main-wrapper {
+  height: 670px;
+  padding: 5%;
   background-color: #fff;
   text-align: center;
   font-weight: 350;
@@ -317,31 +380,33 @@ header {
   animation-duration: 2s;
 }
 
-.comment-wrapper h2{
-  padding: 50px;
-  border-bottom: 3px solid #000;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 28px;
-
-}
-
-.comment-wrapper p{
-  font-size: 18px;
-  line-height:4em;
-
-}
-
-
-.lesson-wrapper {
-  height: 800px;
-  padding-bottom: 80px;
-  padding-left: 5%;
-  padding-right: 5%;
+.works {
+  height: 95%;
+  width: 100%;
+  padding-bottom: 9%;
+  padding-left: 8%;
+  padding-right: 8%;
   background-color: #f7f7f7;
   text-align: center;
   font-weight: 350;
   animation-name: fadein_contents;
   animation-duration: 2s;
+  width: 50%;
+  float: left;
+}
+
+.skills{
+    width: 47%;
+    height: 100%;
+    padding-bottom: 9%;
+    padding-left: 8%;
+    padding-right: 8%;
+    text-align: center;
+    font-weight: 350;
+    animation-name: fadein_contents;
+    animation-duration: 2s;
+      float: left;
+    background-color: #ffffff;
 }
 
 @keyframes fadein_contents {
@@ -356,8 +421,8 @@ to {
 }
 
 .heading {
-  padding-top: 95px;
-  padding-bottom: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: #000;
 }
 
@@ -369,18 +434,7 @@ to {
   padding-bottom: 15px;
 }
 
-.lesson {
-  float: left;
-  width: 25%;
-}
-
-.lesson-icon {
-  position: relative;
-}
-
-.lesson-icon p {
-  color: #000;
-}
+.
 
 .circle{
   border-radius: 50%;
@@ -437,6 +491,7 @@ line-height: 220px;
 
 .message-wrapper {
   border-bottom: 1px solid #eee;
+  padding-top: 100px;
   padding-bottom: 80px;
   text-align: center;
 }
@@ -566,7 +621,7 @@ footer {
 @media all and (max-width: 900px) {
 
   .top-wrapper {
-    height:800px;
+    min-height:100vh;
     padding: 80px 50px 50px 0;
     background-size: 90%;
 
@@ -592,7 +647,7 @@ footer {
 @media all and (max-width: 800px) {
 
   .top-wrapper {
-    height:700px;
+    min-height:100vh;
     padding: 80px 50px 50px 0;
     background-size: 90%;
 
@@ -648,7 +703,7 @@ footer {
   }
 
   .top-wrapper {
-    height:570px;
+    height:100vh;
     padding: 85px 50px 50px 0;
     background-size: 90%;
 
@@ -711,6 +766,42 @@ footer {
     width: 100%;
   }
 
+  .comment-wrapper{
+    height: 800px;
+  }
+
+.profile{
+  width: 100%;
+}
+
+ .profile-img{
+   float: none;
+   width: 100%;
+   marign: auto;
+  text-align: center;
+ }
+ .profile-info{
+   float: none;
+   width: 100%;
+   padding-top:25px;
+  text-align: center;
+ }
+
+.main-wrapper{
+height: 900px;
+}
+ .works{
+   float: none;
+   width: 100%;
+   marign: auto;
+
+ }
+
+ .skills{
+   float: none;
+   width: 100%;
+   marign: auto;
+ }
 
   .go-to-top{
     top: 90%;
